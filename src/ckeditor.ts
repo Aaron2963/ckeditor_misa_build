@@ -21,8 +21,7 @@ import {
 	ImageInsert,
 	ImageResize,
 	ImageStyle,
-	ImageToolbar,
-	ImageUpload
+	ImageToolbar
 } from '@ckeditor/ckeditor5-image';
 import { AutoLink, Link, LinkImage } from '@ckeditor/ckeditor5-link';
 import { List, ListProperties } from '@ckeditor/ckeditor5-list';
@@ -65,7 +64,6 @@ class Editor extends ClassicEditor {
 		ImageResize,
 		ImageStyle,
 		ImageToolbar,
-		ImageUpload,
 		Italic,
 		Link,
 		LinkImage,
@@ -102,17 +100,17 @@ class Editor extends ClassicEditor {
 				'strikethrough',
 				'fontColor',
 				'fontBackgroundColor',
-				'link',
 				'removeFormat',
 				'|',
 				'bulletedList',
 				'numberedList',
+				'insertTable',
 				'horizontalLine',
 				'alignment',
+				'|',
+				'link',
 				'imageInsert',
-				'imageUpload',
 				'mediaEmbed',
-				'insertTable',
 				'sourceEditing'
 			]
 		},
